@@ -1,0 +1,130 @@
+body {
+    margin: 0px;
+    height: 1100px;
+}
+
+.grid-container {
+
+     display: grid;
+     height: 900px;
+     grid-template-columns:15% 15% 20% 25% 25% ;
+     grid-template-rows: 10% 40% 30%;
+     grid-template-areas: "main main main header header"
+                          "main main main sonic1 sonic2 "
+                          "area1 area2 area3 sonic1 sonic2";
+
+}
+
+main {
+    grid-area: main;
+    background-image: url(aeso1.jpeg);
+    text-align: center;
+    font-weight:bolder ;
+    padding: 1px;
+}
+
+section.area1 {
+    grid-area: area1;
+    background-color: darkslategrey;
+    font-weight: 900;
+    text-align: center;
+    
+
+    
+}
+
+#t1 {
+    width: 100%;
+    background-color:coral  ;
+    border: 2px solid black;
+    border-spacing: 5px;
+}
+
+section.area1 a {
+    text-decoration: none;
+    font-family: sans-serif;
+    color: chartreuse;
+    
+    
+
+    
+    
+    
+}
+
+section.area2 {
+
+    grid-area: area2;
+    background-color: gray;
+    font-weight: bold;
+}
+section.area2 iframe {
+    border-color: red;
+}
+
+section.area3 {
+
+    grid-area: area3;
+    background-color:darkslategray ;
+
+}
+
+header {
+    grid-area: header;
+    background-color: black;
+
+
+}
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;
+    
+}
+header li {
+    float: left;
+
+}
+header li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 26px;
+    text-decoration: none;
+}
+.sonic1 {
+
+    grid-area: sonic1;
+    background-color:forestgreen  ;
+
+}
+
+.sonic1 ul a {
+
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+    list-style-type: square;
+    padding-top: 80px;
+    font-weight: bolder;
+    
+
+    
+}
+
+#t2  {
+    background-color: black;
+    color: forestgreen;
+    padding-inline: 2px;
+}
+
+.sonic1 p {
+    font-weight: bolder;
+    
+}
+
+.sonic2 {
+    grid-area: sonic2;
+    background-image: url(disco2.jpg );
+}
